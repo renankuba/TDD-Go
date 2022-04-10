@@ -14,7 +14,7 @@ Originally, the book was written for Java and JUnit, so I am adapting it for Go 
 - [ ] Make "amount" private
 - [x] Dollar side effects?
 - [ ] Money rounding?
-- [ ] equality
+- [x] equality
 - [ ] hasCode()
 - [ ] Equal null
 - [ ] Equal object
