@@ -10,10 +10,12 @@ import (
 func TestMultiplication(t *testing.T) {
 	five := new(money.Dollar)
 	five.New(5)
-	product := five.Times(2)
-	assert.Equal(t, product.Amount, 10.0)
-	product = five.Times(3)
-	assert.Equal(t, product.Amount, 15.0)
+	ten := new(money.Dollar)
+	ten.New(10)
+	assert.Equal(t, five.Times(2), ten)
+	fifteen := new(money.Dollar)
+	fifteen.New(15)
+	assert.Equal(t, five.Times(3), fifteen)
 }
 
 func TestEquality(t *testing.T) {

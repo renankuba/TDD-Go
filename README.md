@@ -11,7 +11,7 @@ Originally, the book was written for Java and JUnit, so I am adapting it for Go 
 
 - [ ] $5 + 10 CHF = $10 if rate is 2:1
 - [x] $5 * 2 = $10
-- [ ] Make "amount" private
+- [x] Make "amount" private
 - [x] Dollar side effects?
 - [ ] Money rounding?
 - [x] equality
