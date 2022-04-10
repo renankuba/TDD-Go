@@ -1,6 +1,7 @@
 # TDD-Go
 Test-Driven Development By Example book, by Kent Beck, with Go and Testify.
 
+Originally, the book was written for Java and JUnit, so I am adapting it for Go and Testify.
 ---
 
 ## Part 1
@@ -13,3 +14,7 @@ Test-Driven Development By Example book, by Kent Beck, with Go and Testify.
 - [ ] Make "amount" private
 - [x] Dollar side effects?
 - [ ] Money rounding?
+- [ ] equality
+- [ ] hasCode()
+- [ ] Equal null
+- [ ] Equal object
