@@ -1,11 +1,13 @@
 # TDD-Go
-Test-Driven Development By Example book, by Kent Beck, with Go and Testify.
 
-Originally, the book was written for Java and JUnit, so I am adapting it for Go and Testify.
+Test-Driven Development By Example book, by Kent Beck, with Go and Testify.
 
 ---
 
 ## Part 1
+
+Originally, Part 1 was written for Java and JUnit, so I am adapting it for Go and Testify.
+
 ### Multi-Currency Money
 
 ### Tests List
