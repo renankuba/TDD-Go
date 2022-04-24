@@ -25,4 +25,5 @@ Originally, Part 1 was written for Java and JUnit, so I am adapting it for Go an
 - [ ] Dollar/Franc duplication
 - [x] Common equals
 - [ ] Common times
-- [ ] Compare Francs with Dollars
+- [x] Compare Francs with Dollars
+- [ ] Currency?
