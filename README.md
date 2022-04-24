@@ -26,4 +26,5 @@ Originally, Part 1 was written for Java and JUnit, so I am adapting it for Go an
 - [x] Common equals
 - [ ] Common times
 - [x] Compare Francs with Dollars
-- [ ] Currency?
+- [x] Currency?
+- [ ] Delete testFrancMultiplication
