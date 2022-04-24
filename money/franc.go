@@ -1,15 +1,16 @@
 package money
 
 type Franc struct {
-	amount float64
+	Money
 }
 
-func (d *Franc) New(amount float64) {
+func NewFranc(amount float64) (d *Franc) {
+	d = new(Franc)
 	d.amount = amount
+	return d
 }
 
 func (d *Franc) Times(multiplier float64) (product *Franc) {
-	product = new(Franc)
-	product.New(d.amount * multiplier)
+	product = NewFranc(d.amount * multiplier)
 	return product
 }

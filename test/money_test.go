@@ -8,34 +8,14 @@ import (
 )
 
 func TestMultiplication(t *testing.T) {
-	five := new(money.Dollar)
-	five.New(5)
-	ten := new(money.Dollar)
-	ten.New(10)
-	assert.Equal(t, five.Times(2), ten)
-	fifteen := new(money.Dollar)
-	fifteen.New(15)
-	assert.Equal(t, five.Times(3), fifteen)
+	five := money.NewDollar(5)
+	assert.Equal(t, five.Times(2), money.NewDollar(10))
+	assert.Equal(t, five.Times(3), money.NewDollar(15))
 }
 
 func TestFrancMultiplication(t *testing.T) {
-	five := new(money.Franc)
-	five.New(5)
-	ten := new(money.Franc)
-	ten.New(10)
-	assert.Equal(t, five.Times(2), ten)
-	fifteen := new(money.Franc)
-	fifteen.New(15)
-	assert.Equal(t, five.Times(3), fifteen)
-}
-
-func TestEquality(t *testing.T) {
-	one := new(money.Dollar)
-	one.New(5)
-	two := new(money.Dollar)
-	two.New(5)
-	three := new(money.Dollar)
-	three.New(6)
-	assert.Equal(t, one, two)
-	assert.NotEqual(t, one, three)
+	assert.Equal(t, money.NewDollar(5), money.NewDollar(5))
+	assert.NotEqual(t, money.NewDollar(5), money.NewDollar(6))
+	assert.Equal(t, money.NewFranc(5), money.NewFranc(5))
+	assert.NotEqual(t, money.NewFranc(5), money.NewFranc(6))
 }

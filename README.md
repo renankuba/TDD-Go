@@ -23,5 +23,6 @@ Originally, Part 1 was written for Java and JUnit, so I am adapting it for Go an
 - [ ] Equal object
 - [x] 5 CHF * 2 = 10 CHF
 - [ ] Dollar/Franc duplication
-- [ ] Common equals
+- [x] Common equals
 - [ ] Common times
+- [ ] Compare Francs with Dollars
