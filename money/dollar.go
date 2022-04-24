@@ -1,7 +1,7 @@
 package money
 
 type Dollar struct {
-	Money
+	MoneyValue
 }
 
 func NewDollar(amount float64) (d *Dollar) {
@@ -10,7 +10,7 @@ func NewDollar(amount float64) (d *Dollar) {
 	return d
 }
 
-func (d *Dollar) Times(multiplier float64) (product *Dollar) {
+func (d *Dollar) Times(multiplier float64) (product Money) {
 	product = NewDollar(d.amount * multiplier)
 	return product
 }

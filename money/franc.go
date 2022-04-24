@@ -1,7 +1,7 @@
 package money
 
 type Franc struct {
-	Money
+	MoneyValue
 }
 
 func NewFranc(amount float64) (d *Franc) {
@@ -10,7 +10,7 @@ func NewFranc(amount float64) (d *Franc) {
 	return d
 }
 
-func (d *Franc) Times(multiplier float64) (product *Franc) {
+func (d *Franc) Times(multiplier float64) (product Money) {
 	product = NewFranc(d.amount * multiplier)
 	return product
 }
