@@ -28,6 +28,6 @@ func TestEquality(t *testing.T) {
 }
 
 func TestCurrency(t *testing.T) {
-	assert.Equal(t, "USD", money.NewDollar(1).Currency())
-	assert.Equal(t, "CHF", money.NewFranc(1).Currency())
+	assert.Equal(t, "USD", money.NewDollar(1).GetCurrency())
+	assert.Equal(t, "CHF", money.NewFranc(1).GetCurrency())
 }

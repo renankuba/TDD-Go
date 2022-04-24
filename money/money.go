@@ -1,12 +1,16 @@
 package money
 
-type MoneyValue struct {
+type Currency struct {
 	amount   float64
 	currency string
 }
 
-func newMoneyValue(amount float64, currency string) (m *MoneyValue) {
-	m = new(MoneyValue)
+func (d *Currency) GetCurrency() string {
+	return d.currency
+}
+
+func newMoneyValue(amount float64, currency string) (m *Currency) {
+	m = new(Currency)
 	m.amount = amount
 	m.currency = currency
 	return m
@@ -14,5 +18,5 @@ func newMoneyValue(amount float64, currency string) (m *MoneyValue) {
 
 type Money interface {
 	Times(multiplier float64) Money
-	Currency() string
+	GetCurrency() string
 }
