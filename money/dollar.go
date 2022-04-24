@@ -5,7 +5,7 @@ type Dollar struct {
 }
 
 func NewDollar(amount float64) *Dollar {
-	value := *newMoneyValue(amount, "USD")
+	value := *newCurrency(amount, "USD")
 	return &Dollar{value}
 }
 

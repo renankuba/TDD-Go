@@ -5,7 +5,7 @@ type Franc struct {
 }
 
 func NewFranc(amount float64) *Franc {
-	value := *newMoneyValue(amount, "CHF")
+	value := *newCurrency(amount, "CHF")
 	return &Franc{value}
 }
 

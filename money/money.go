@@ -9,7 +9,7 @@ func (d *Currency) GetCurrency() string {
 	return d.currency
 }
 
-func newMoneyValue(amount float64, currency string) (m *Currency) {
+func newCurrency(amount float64, currency string) (m *Currency) {
 	m = new(Currency)
 	m.amount = amount
 	m.currency = currency
