@@ -13,14 +13,6 @@ func (d *Money) GetCurrency() string {
 	return d.currency
 }
 
-func (d *Money) Equals(other *Money) bool {
-	if other == nil {
-		return false
-	}
-	return other.currency == d.currency &&
-		other.amount == d.amount
-}
-
 func newMoney(amount float64, currency string) (m *Money) {
 	m = new(Money)
 	m.amount = amount
