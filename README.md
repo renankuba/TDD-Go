@@ -13,6 +13,7 @@ Originally, Part 1 was written for Java and JUnit, so I am adapting it for Go an
 ### Tests List
 
 - [ ] $5 + 10 CHF = $10 if rate is 2:1
+- [ ] $5 + $5 = $10
 - [x] $5 * 2 = $10
 - [x] Make "amount" private
 - [x] Dollar side effects?
@@ -27,4 +28,4 @@ Originally, Part 1 was written for Java and JUnit, so I am adapting it for Go an
 - [x] Common times
 - [x] Compare Francs with Dollars
 - [x] Currency?
-- [ ] Delete testFrancMultiplication
+- [ ] Delete testFrancMultiplicatin

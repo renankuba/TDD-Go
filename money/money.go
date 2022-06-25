@@ -13,6 +13,10 @@ func (d *Money) GetCurrency() string {
 	return d.currency
 }
 
+func (d *Money) Plus(addend *Money) Expression {
+	return newMoney(d.amount+addend.amount, d.currency)
+}
+
 func newMoney(amount float64, currency string) (m *Money) {
 	m = new(Money)
 	m.amount = amount
