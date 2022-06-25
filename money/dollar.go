@@ -10,5 +10,5 @@ func NewDollar(amount float64) *Dollar {
 }
 
 func (d *Dollar) Times(multiplier float64) Money {
-	return NewDollar(d.amount * multiplier)
+	return NewMoney(d.amount*multiplier, "USD")
 }
