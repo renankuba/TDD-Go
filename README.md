@@ -24,7 +24,7 @@ Originally, Part 1 was written for Java and JUnit, so I am adapting it for Go an
 - [x] 5 CHF * 2 = 10 CHF
 - [ ] Dollar/Franc duplication
 - [x] Common equals
-- [ ] Common times
+- [x] Common times
 - [x] Compare Francs with Dollars
 - [x] Currency?
 - [ ] Delete testFrancMultiplication
