@@ -5,16 +5,20 @@ type Money struct {
 	currency string
 }
 
-func (d *Money) Times(multiplier float64) *Money {
-	return newMoney(d.amount*multiplier, d.currency)
+func (m *Money) Times(multiplier float64) *Money {
+	return newMoney(m.amount*multiplier, m.currency)
 }
 
-func (d *Money) GetCurrency() string {
-	return d.currency
+func (m *Money) GetCurrency() string {
+	return m.currency
 }
 
-func (d *Money) Plus(addend *Money) Expression {
-	return newMoney(d.amount+addend.amount, d.currency)
+func (m *Money) Plus(addend *Money) Expression {
+	return NewSum(m, addend)
+}
+
+func (m *Money) Reduce(to string) *Money {
+	return m
 }
 
 func newMoney(amount float64, currency string) (m *Money) {
