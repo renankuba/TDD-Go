@@ -5,7 +5,7 @@ type Sum struct {
 	Addend *Money
 }
 
-func (s *Sum) Reduce(to string) *Money {
+func (s *Sum) Reduce(bank *Bank, to string) *Money {
 	amount := s.Augend.amount + s.Addend.amount
 	return newMoney(amount, to)
 }
