@@ -14,12 +14,12 @@ Originally, Part 1 was written for Java and JUnit, so I am adapting it for Go an
 
 - [x] $5 + 10 CHF = $10 if rate is 2:1
 - [x] $5 + $5 = $10
-- [ ] Return Money from $5 + $5
+- [x] Return Money from $5 + $5
 - [x] Bank.Reduce(Money)
 - [x] Reduce Money with conversion
 - [x] Reduce(Bank, string)
-- [ ] Sum.Plus
-- [ ] Expression.Times
+- [x] Sum.Plus
+- [x] Expression.Times
 - [x] $5 * 2 = $10
 - [x] Make "amount" private
 - [x] Dollar side effects?

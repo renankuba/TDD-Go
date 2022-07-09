@@ -11,7 +11,11 @@ func (s *Sum) Reduce(bank *Bank, to string) *Money {
 }
 
 func (s *Sum) Plus(addend Expression) Expression {
-	return nil
+	return NewSum(s, addend)
+}
+
+func (s *Sum) Times(multiplier float64) Expression {
+	return NewSum(s.Augend.Times(multiplier), s.Addend.Times(multiplier))
 }
 
 func NewSum(augend Expression, addend Expression) (s *Sum) {
