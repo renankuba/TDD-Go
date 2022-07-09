@@ -13,7 +13,7 @@ Originally, Part 1 was written for Java and JUnit, so I am adapting it for Go an
 ### Tests List
 
 - [ ] $5 + 10 CHF = $10 if rate is 2:1
-- [ ] $5 + $5 = $10
+- [x] $5 + $5 = $10
 - [ ] Return Money from $5 + $5
 - [x] Bank.Reduce(Money)
 - [x] Reduce Money with conversion
@@ -23,13 +23,10 @@ Originally, Part 1 was written for Java and JUnit, so I am adapting it for Go an
 - [x] Dollar side effects?
 - [ ] Money rounding?
 - [x] equality
-- [ ] hasCode()
-- [ ] Equal null
-- [ ] Equal object
 - [x] 5 CHF * 2 = 10 CHF
 - [x] Dollar/Franc duplication
 - [x] Common equals
 - [x] Common times
 - [x] Compare Francs with Dollars
 - [x] Currency?
-- [ ] Delete testFrancMultiplicatin
+- [x] Delete testFrancMultiplicatin
