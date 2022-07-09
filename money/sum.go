@@ -1,16 +1,20 @@
 package money
 
 type Sum struct {
-	Augend *Money
-	Addend *Money
+	Augend Expression
+	Addend Expression
 }
 
 func (s *Sum) Reduce(bank *Bank, to string) *Money {
-	amount := s.Augend.amount + s.Addend.amount
+	amount := s.Augend.Reduce(bank, to).amount + s.Addend.Reduce(bank, to).amount
 	return newMoney(amount, to)
 }
 
-func NewSum(augend *Money, addend *Money) (s *Sum) {
+func (s *Sum) Plus(addend Expression) Expression {
+	return nil
+}
+
+func NewSum(augend Expression, addend Expression) (s *Sum) {
 	s = new(Sum)
 	s.Augend = augend
 	s.Addend = addend

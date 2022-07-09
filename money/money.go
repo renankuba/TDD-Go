@@ -5,7 +5,7 @@ type Money struct {
 	currency string
 }
 
-func (m *Money) Times(multiplier float64) *Money {
+func (m *Money) Times(multiplier float64) Expression {
 	return newMoney(m.amount*multiplier, m.currency)
 }
 
@@ -13,7 +13,7 @@ func (m *Money) GetCurrency() string {
 	return m.currency
 }
 
-func (m *Money) Plus(addend *Money) Expression {
+func (m *Money) Plus(addend Expression) Expression {
 	return NewSum(m, addend)
 }
 
